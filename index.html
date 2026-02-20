@@ -2564,7 +2564,7 @@ function TermHighlighter({ text, accentColor = "#ffd54f" }) {
   );
 }
 
-export default function BusinessEconomicsQuiz() {
+function BusinessEconomicsQuiz() {
   const [screen, setScreen] = useState("menu");
   const [selectedTopics, setSelectedTopics] = useState(new Set(TOPICS));
   const [quizQuestions, setQuizQuestions] = useState([]);
@@ -4178,6 +4178,7 @@ export default function BusinessEconomicsQuiz() {
   return null;
 }
 
+  ReactDOM.createRoot(document.getElementById('root')).render(<BusinessEconomicsQuiz />);
   </script>
 </body>
 </html>
